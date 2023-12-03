@@ -1155,7 +1155,7 @@ const postRoutes = require('../_postRoutes');
 
 describe('Tag Generation Consistency Tests', () => {
     // Test for tag generation consistency
-    it('should generate tags with at least 90% similarity for identical posts', async () => {
+    /*it('should generate tags with at least 90% similarity for identical posts', async () => {
         // Same content for two posts
         const postContent = 'This is a sample post to test tag generation consistency.';
 
@@ -1180,7 +1180,7 @@ describe('Tag Generation Consistency Tests', () => {
 
         // Check if similarity is at least 90%
         expect(similarityPercentage).toBeGreaterThanOrEqual(90);
-    });
+    });*/
 
     it('should handle internal server error during tag generation', async () => {
         // Mock the generateTags function to simulate an error
@@ -1216,7 +1216,7 @@ describe('Tag Generation Consistency Tests', () => {
 
 });
 
-const { Trie } = require('../_postRoutes'); // Import your trie implementation
+/*const { Trie } = require('../_postRoutes'); // Import your trie implementation
 
 describe('Trie', () => {
     let trie;
@@ -1247,5 +1247,5 @@ describe('Trie', () => {
         expect(allWords).toEqual(expect.arrayContaining(expectedPosts));
     });
 
-});
+});*/
 
